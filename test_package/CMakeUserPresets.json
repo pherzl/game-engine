@@ -1,0 +1,9 @@
+{
+    "version": 4,
+    "vendor": {
+        "conan": {}
+    },
+    "include": [
+        "build\\msvc-192-x86_64-20-relwithdebinfo\\generators\\CMakePresets.json"
+    ]
+}
