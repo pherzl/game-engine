@@ -3,8 +3,11 @@ project(algorithms CXX)
 
 add_library(algorithms src/algorithms.cpp)
 
-find_package(fmt CONFIG REQUIRED)
+find_package(fmt REQUIRED)
 target_link_libraries(algorithms PUBLIC fmt::fmt)
+
+find_package(ZLIB)
+target_link_libraries(algorithms PUBLIC ZLIB::ZLIB)
 
 target_include_directories(algorithms PUBLIC include)
 
