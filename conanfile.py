@@ -45,6 +45,7 @@ class game_engineRecipe(ConanFile):
     def package_info(self):
         self.cpp_info.components["algorithms"].libs = ["algorithms"]
         self.cpp_info.components["algorithms"].set_property("cmake_target_name", "game-engine::algorithms")
+        self.cpp_info.components["algorithms"].requires = ["fmt::fmt", "zlib::zlib"]
 
         self.cpp_info.components["network"].libs = ["network"]
         self.cpp_info.components["network"].set_property("cmake_target_name", "game-engine::network")
